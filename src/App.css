@@ -1,38 +1,145 @@
-.App {
+* {
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  padding: 15px;
+}
+
+#logo {
+  margin-right: 5px;
+}
+
+.light {
+  background-color: aliceblue;
+  color: black;
+}
+
+.dark {
+  background-color: rgb(28, 27, 29);
+  color: aliceblue;
+}
+
+#label {
+  color: aliceblue;
+}
+
+.custom-control-label::before {
+  background-color: aliceblue !important;
+  border-color: rgb(28, 27, 29) !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  background-color: rgb(28, 27, 29) !important;
+  border-color: aliceblue !important;
+  outline: none;
+}
+
+.custom-control-input:checked~.custom-control-label::after {
+  background-color: aliceblue !important;
+}
+
+.custom-control-label::after {
+  background-color: rgb(55, 55, 56) !important;
+}
+
+#course_alert {
+  z-index: 5;
+  position: fixed;
+  right: 5px;
+}
+
+.dev_col {
+  padding: 0 !important;
+  margin: auto;
+  max-width: 500px !important;
+}
+
+.animated_svg {
+  display: inline-block;
+  width: 500px;
+  margin: 40px auto;
+}
+
+ol {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.course_fee {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#footer {
+  background-color: #343a40;
+  color: aliceblue;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+#contact {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#icons_div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#fb {
+  color: rgb(25, 111, 241);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#insta {
+  color: rgb(187, 67, 87);
+}
+
+#twitter {
+  color: rgb(41, 120, 167);
+}
+
+#youtube {
+  color: rgb(211, 45, 45);
+}
+
+.foot_icons {
+  font-size: 25px;
+  margin: 15px;
+}
+
+#error {
+  height: 70.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#error h1 {
+  font-size: 6vw;
+}
+
+#error p {
+  font-size: 3vw;
+}
+
+@media (max-width:520px) {
+  #course_alert {
+    left: 2px;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .animated_svg {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 30px !important;
   }
 }
