@@ -35,8 +35,8 @@ jobs:
       run: yarn build
     
     - name: Renaming file
-      run: mv build/index.html 200.html
-      
+      run: mv build/index.html build/200.html
+
     - name: Installing surge  
       run: npm install -g surge
     
